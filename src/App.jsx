@@ -16,7 +16,7 @@ function check(){
 
 }
   return (
-   <div className=' h-screen  items-centerflex flex-wrap  justify-center gap-2 '>
+   <div className='h-screen items-center flex flex-wrap justify-center gap-2'>
     <div>counter:{count}</div>
    <div className=" flex flex-wrap justify-center  gap-2 p-0 px-2 rounded-2xl"style={{backgroundColor:'white'}}> 
     <button
