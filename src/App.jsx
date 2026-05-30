@@ -8,7 +8,8 @@ function App() {
   const [count, setCount] = useState(10)
 function check(){
   if(count==0){
-    console.log("unable to decrement");
+    // console.log("unable to decrement");
+    alert("not possilbe")
   }
   else{
     setCount(count-1);
@@ -16,17 +17,18 @@ function check(){
 
 }
   return (
-   <div className='h-screen items-center flex flex-wrap justify-center gap-2'>
-    <div>counter:{count}</div>
-   <div className=" flex flex-wrap justify-center  gap-2 p-0 px-2 rounded-2xl"style={{backgroundColor:'white'}}> 
-    <button
+   <div className='h-screen  bg-sky-300 items-center flex flex-wrap justify-center gap-2'>
+    
+    <div className='bg-pink-200 rounded-2xl px-1 text-3xl'>counter:{count}</div>
+   <div className=" flex  flex-wrap justify-center  gap-2 p-0 px-2 rounded-2xl"style={{backgroundColor:'orangered'}}> 
+    <button 
     onClick={()=>setCount(count+1)}
-    className="flex flex-wrap px-3"> 
+    className="flex  bg-black text-white rounded-2xl flex-wrap px-3"> 
       increment++
 
     </button>
     <button  onClick={()=>check()
-    }   className="flex flex-wrap px-3"> 
+    }   className="flex bg-black text-white rounded-2xl flex-wrap px-3"> 
      decrement--
 
     </button>
