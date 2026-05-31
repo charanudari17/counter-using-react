@@ -12,7 +12,7 @@ function check(){
     alert("not possilbe")
   }
   else{
-    setCount(count-1);
+    setCount(count=>count-1);
   }
 
 }
